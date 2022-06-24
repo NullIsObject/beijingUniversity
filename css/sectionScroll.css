@@ -1,0 +1,102 @@
+.sectionScrollTitle .title>div {
+	transform: scale(1) !important;
+	opacity: 1 !important;
+}
+
+#section1>.section>ul:first-child>li:first-child,
+#section1>.section>ul:nth-child(3)>li:nth-child(1) {
+	transition: all 1s ease-out 2.2s;
+	animation-delay: 0.9s;
+}
+
+#section1>.section>ul:first-child>li:nth-child(2),
+#section1>.section>ul:nth-child(3)>li:nth-child(2) {
+	transition: all 1s ease-out 2.3s;
+}
+
+#section1>.section>ul:first-child>li:nth-child(3),
+#section1>.section>ul:nth-child(3)>li:nth-child(3) {
+	transition: all 1s ease-out 2s;
+}
+
+#section1>.section>ul:first-child>li:nth-child(4),
+#section1>.section>ul:nth-child(3)>li:nth-child(4) {
+	transition: all 1s ease-out 2.4s;
+	animation-delay: 1.5s;
+}
+
+#section1>.section>ul:first-child>li:nth-child(5),
+#section1>.section>ul:nth-child(3)>li:nth-child(5) {
+	transition: all 1s ease-out 2.9s;
+}
+
+#section1>.section>ul:first-child>li:nth-child(6),
+#section1>.section>ul:nth-child(3)>li:nth-child(6) {
+	transition: all 1s ease-out 2.1s;
+}
+
+#section1>.section>ul:nth-child(2)>li:nth-child(1),
+#section1>.section>ul:nth-child(4)>li:nth-child(1) {
+	transition: all 1s ease-out 2.4s;
+}
+
+#section1>.section>ul:nth-child(2)>li:nth-child(2),
+#section1>.section>ul:nth-child(4)>li:nth-child(2) {
+	transition: all 1s ease-out 1.9s;
+}
+
+#section1>.section>ul:nth-child(2)>li:nth-child(3),
+#section1>.section>ul:nth-child(4)>li:nth-child(3) {
+	transition: all 1s ease-out 2.2s;
+	animation-delay: 0.2s;
+}
+
+#section1>.section>ul:nth-child(2)>li:nth-child(4),
+#section1>.section>ul:nth-child(4)>li:nth-child(4) {
+	transition: all 1s ease-out 1.8s;
+	animation-delay: 2.1s;
+}
+
+#section1>.section>ul:nth-child(2)>li:nth-child(5),
+#section1>.section>ul:nth-child(4)>li:nth-child(5) {
+	transition: all 1s ease-out 2.1s;
+}
+
+#section1>.section>ul:nth-child(2)>li:nth-child(6),
+#section1>.section>ul:nth-child(4)>li:nth-child(6) {
+	transition: all 1s ease-out 2.3s;
+	animation-delay: 0.9s;
+}
+
+.sectionScroll1>.section>ul>li {
+	transform: none !important;
+}
+
+.sectionScroll2>.section>.item {
+	transform: none !important;
+	opacity: 1 !important;
+}
+
+.sectionScroll3>.section>.text {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+.sectionScroll3 .pic>img {
+	opacity: 1 !important;
+	transform: none !important;
+}
+
+.sectionScroll4>.section>.item {
+	opacity: 1 !important;
+}
+
+#section4>.section>.item>p:first-child {
+	opacity: 0;
+	transition: all 1.8s ease-out;
+}
+
+.sectionScroll4>.section>.item>p:first-child {
+	transform: scale(1) !important;
+	opacity: 1 !important;
+}

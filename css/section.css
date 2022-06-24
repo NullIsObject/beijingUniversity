@@ -1,0 +1,1364 @@
+#sectionBtn {
+	width: 82px;
+	height: 170px;
+	position: fixed;
+	right: 0;
+	top: calc(50% - 85px);
+	z-index: 21;
+	cursor: pointer;
+	background-image: url(../pic/tuBiao/sectionBtn.png);
+	background-size: 100% 100%;
+	transform-origin: right center;
+}
+
+#sectionBtn::before {
+	content: "";
+	display: block;
+	width: 97px;
+	height: 91px;
+	position: absolute;
+	top: 10px;
+	left: -20%;
+	background-image: url(../pic/tuBiao/bai.png);
+	background-position: center;
+	background-size: 100%;
+}
+
+#sectionBtn::after {
+	content: "";
+	display: block;
+	width: 78px;
+	height: 88px;
+	position: absolute;
+	bottom: 10px;
+	left: 15px;
+	background-image: url(../pic/tuBiao/nian.png);
+	background-position: center;
+	background-size: 100%;
+}
+
+#sectionBtn>p {
+	width: 36px;
+	height: inherit;
+	background-image: url(../pic/tuBiao/sectionBtn2.png);
+	background-size: 36px;
+	background-repeat: no-repeat;
+	background-position: center;
+	position: absolute;
+	top: 0px;
+	z-index: 1;
+}
+
+.sectionBtn {
+	transform: scale(0);
+	opacity: 0;
+}
+
+.sectionBtn::before {
+	transform: scale(1.6);
+	opacity: 0;
+}
+
+.sectionBtn>p {
+	margin-left: 20px;
+	opacity: 0;
+}
+
+.sectionBtn::after {
+	opacity: 0;
+	transform: scale(1.6);
+}
+
+.sectionBtn2 {
+	transform: scale(1);
+	opacity: 1;
+	transition: all 1s ease-out 0.5s;
+}
+
+.sectionBtn2::before {
+	transform: none;
+	opacity: 1;
+	transition: all 1.5s ease-out 1.8s;
+}
+
+.sectionBtn2>p {
+	margin-left: 40px;
+	opacity: 1;
+	transition: all 1s ease-out 4.5s;
+}
+
+.sectionBtn2::after {
+	opacity: 1;
+	transform: scale(1);
+	transition: all 1.5s ease-out 2.6s;
+}
+
+@media screen and (max-width:850px) {
+	#sectionBtn {
+		transform: scale(0.6);
+	}
+}
+
+section {
+	height: 100vh;
+	position: fixed;
+	right: 0px;
+	top: 0px;
+	z-index: 998;
+	overflow: hidden;
+}
+
+.section1 {
+	width: 0px;
+	transition: 1.3s cubic-bezier(0.5, 0, 0.2, 1);
+}
+
+.section2 {
+	width: 100%;
+	transition: 1.3s cubic-bezier(0.5, 0, 0.2, 1);
+}
+
+section .indexBtn {
+	position: absolute;
+	left: -10px;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 20px;
+	writing-mode: vertical-lr;
+	padding: 15px 5px 15px 50px;
+	border-radius: 0px 5px 5px 0px;
+	color: white;
+	background-image: url(../pic/section/tuBiao/indexBtn.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+}
+
+section .indexBtn:hover {
+	left: 0px;
+}
+
+section .indexBtn1 {
+	/*当页面显示第三页时使用*/
+	background-image: url(../pic/section/tuBiao/indexBtn1.png);
+	color: black;
+}
+
+section .rightBtn {
+	position: absolute;
+	right: 0px;
+	top: calc(50% - 25px);
+	width: 50px;
+	height: 50px;
+	background-image: url(../pic/section/tuBiao/rightBtn.png);
+	background-size: 100%;
+	cursor: pointer;
+}
+
+section .navBtn {
+	background-color: white;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	top: 40px;
+	right: 40px;
+	border-radius: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding: 10px 0px 10px 0px;
+	cursor: pointer;
+	transition: all 0.3s ease-out;
+	z-index: 5;
+	box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+
+section .navBtn1 .item {
+	transform: none;
+	transition: all 0.3s ease-out 0s;
+}
+
+section .navBtn1 .item:nth-child(2) {
+	opacity: 1;
+}
+
+section .navBtn2 .item:nth-child(2) {
+	opacity: 0;
+}
+
+section .navBtn2 .item:first-child {
+	transition: all 0.3s ease-out 0s;
+	transform: translate(0, 10px) rotate(45deg);
+}
+
+section .navBtn2 .item:last-child {
+	transition: all 0.3s ease-out 0s;
+	transform: translate(0, -10px) rotate(-45deg)
+}
+
+section .navBtn:hover {
+	box-shadow: 0px 0px 15px 1px rgba(00, 00, 00, 0.5);
+}
+
+section .navBtn>.item {
+	width: 50%;
+	height: 2px;
+	background-color: #000000;
+	margin: auto;
+}
+
+section .bottomBtn {
+	width: 100%;
+	position: absolute;
+	left: 0px;
+	bottom: 30px;
+	cursor: pointer;
+}
+
+section .bottomBtn>ul {
+	width: 722px;
+	margin: auto;
+	display: flex;
+}
+
+section .bottomBtn>ul>li {
+	background-image: url(../pic/section/tuBiao/bottom2.png);
+	background-repeat: no-repeat;
+	color: white;
+	text-align: center;
+}
+
+.bottomBtnLi {
+	/*当页面显示第三页时使用*/
+	background-image: url(../pic/section/tuBiao/bottom.png) !important;
+	color: #000000 !important;
+}
+
+section .bottomBtn>ul>li:first-child {
+	width: 122px;
+	background-size: 242px;
+	background-position: -120px top;
+}
+
+section .bottomBtn>ul>li:first-child>p {
+	margin-left: -100%;
+}
+
+section .bottomBtn>ul>li:last-child {
+	width: 121px;
+	background-size: 242px;
+	background-position: left top;
+}
+
+section .bottomBtn>ul>li:last-child>p {
+	width: 100%;
+	margin-left: 50%;
+}
+
+section .bottomBtn>ul>li:nth-child(2),
+section .bottomBtn>ul>li:nth-child(3) {
+	width: 240px;
+	background-size: 240px;
+	background-position: center top;
+}
+
+section .bottomBtn>ul>li>p {
+	padding-top: 30px;
+	position: relative;
+}
+
+section .bottomBtn>ul>li>p::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	transition: all 0.5s ease-out 0s;
+	background-image: url(../pic/section/tuBiao/bottom_cho.png);
+	background-repeat: no-repeat;
+	background-position: center 10px;
+}
+
+.bottomBtnP1::after {
+	transform: scale(0, 0);
+}
+
+.bottomBtnP2::after {
+	transform: none;
+}
+
+#nav4 {
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	left: 0px;
+	top: 0px;
+	background-color: #00000050;
+	display: flex;
+	transition: all 0.5s ease-out 0s;
+}
+
+.nav4_1 {
+	visibility: hidden;
+	transform: scale(1.1);
+	opacity: 0;
+}
+
+.nav4_2 {
+	visibility: visible;
+	transform: none;
+	opacity: 1;
+}
+
+#nav4>div {
+	background-color: white;
+	width: 50%;
+}
+
+#nav4>div:first-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#nav4>div:first-child>.title {
+	width: 200px;
+	margin: auto;
+}
+
+#nav4>div:first-child>.title>img {
+	display: block;
+	width: 200px;
+	margin: auto;
+}
+
+#nav4>div:first-child>.title>div {
+	line-height: 46px;
+	font-size: 16px;
+	margin-top: 50px;
+}
+
+#nav4>div:first-child>.title>div>div>p {
+	display: inline;
+}
+
+#nav4>div:first-child>.title>div>div {
+	position: relative;
+	background-image: linear-gradient(#94070a, #94070a);
+	background-repeat: no-repeat;
+	background-size: 0px 1.5px;
+	background-position: left bottom;
+	transition: all 0.5s ease-out 0s;
+}
+
+#nav4>div:first-child>.title>div ul {
+	z-index: 1;
+	width: 100px;
+	height: 200%;
+	margin-left: 150px;
+	position: absolute;
+	top: -0.5px;
+	padding-left: 20px;
+	visibility: hidden;
+	background-image: linear-gradient(#94070a, #94070a);
+	background-repeat: no-repeat;
+	background-size: 1.5px 0px;
+	background-position: left center;
+}
+
+#nav4>div:first-child>.title>div>div:hover {
+	background-size: 150px 1.5px;
+}
+
+#nav4>div:first-child>.title>div>div:hover ul {
+	background-size: 1.5px 25px;
+	transition: all 0.5s ease-out 0.5s;
+	visibility: visible;
+}
+
+#nav4>div:first-child>.title>div li {
+	width: 150px;
+	opacity: 0;
+	transition: all 0.3s ease-out 0s;
+}
+
+#nav4>div:first-child>.title>div>div>p:hover,
+#nav4>div:first-child>.title>div>div li:hover {
+	color: #94070A;
+	cursor: pointer;
+}
+
+#nav4>div:first-child>.title>div:hover li {
+	opacity: 1;
+}
+
+#nav4>div:first-child>.title>div li:hover {
+	transform: translate(10px);
+}
+
+#nav4_bottom {
+	display: flex;
+}
+
+#nav4_bottom>p {
+	width: 42px;
+	height: 42px;
+	border-radius: 50%;
+	border: 1px solid #ddd;
+	margin-right: 20px;
+	line-height: 42px;
+	display: flex;
+	justify-content: center;
+	cursor: pointer;
+}
+
+#nav4_bottom>p img {
+	display: block;
+	width: 20px;
+	margin: auto;
+	align-items: center;
+}
+
+#nav4>div:last-child {
+	background-image: url(../pic/section/bg/nav4.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+@media screen and (max-width:1500px) {
+	section .bottomBtn {
+		bottom: 10px;
+	}
+}
+
+@media screen and (max-width:1300px) {
+	section .indexBtn {
+		background-color: white;
+		color: #000000;
+		padding: 15px 5px 15px 5px;
+		left: 0px;
+	}
+
+	section .indexBtn1 {
+		/*当页面显示第三页时使用*/
+		background-image: url(../pic/section/tuBiao/indexBtn.png);
+		box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+	}
+}
+
+@media screen and (max-width:850px) {
+	section .navBtn {
+		display: none;
+	}
+
+	section .rightBtn {
+		display: none !important;
+	}
+
+	section .bottomBtn {
+		display: none;
+	}
+
+	#nav4 {
+		display: none;
+	}
+}
+
+#section {
+	width: 400vw;
+	height: 100vh;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+	display: flex;
+	transition: 1.3s cubic-bezier(0.5, 0, 0.2, 1) 0s;
+}
+
+#section>div {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	overflow: hidden;
+}
+
+#section>div .title {
+	display: flex;
+	justify-content: center;
+}
+
+#section>div .title>div {
+	margin: auto;
+	display: flex;
+	transform: scale(0.9);
+	opacity: 0;
+	transition: all 1s ease-out 1.3s;
+}
+
+#section>div .title>div>* {
+	color: white;
+	writing-mode: vertical-lr;
+	display: flex;
+	justify-content: center;
+}
+
+#section>div .title>div>div {
+	font-size: 18px;
+	margin-left: 25px;
+}
+
+#section1 {
+	position: relative;
+}
+
+#section1>.title {
+	width: 20%;
+	height: 100%;
+	background-image: url(../pic/section/title/01.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#section1>.section {
+	width: 80%;
+	height: 100%;
+	background-image: url(../pic/section/bg/01.jpg);
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+}
+
+#section1>.section>ul {
+	width: 100%;
+	height: 25%;
+	display: flex;
+}
+
+#section1>.section>ul>li {
+	width: calc(100% / 6);
+	height: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	transform: scaleX(0);
+}
+
+.section1_bg1 {
+	background: #6780ad;
+}
+
+.section1_bg2 {
+	background: #4b6695;
+}
+
+.section1_bg3 {
+	background: #385284;
+}
+
+.section1_bg4 {
+	background: #5b75a3;
+}
+
+@keyframes section1_bg5 {
+	0% {
+		opacity: 1;
+	}
+
+	25% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.section1_bg5 {
+	background: rgba(12, 38, 90, 0.3);
+	animation: section1_bg5 3s ease-out 0s infinite;
+}
+
+.section1_bg6 {
+	background: #3a578a;
+}
+
+#section1>.section>ul>li p {
+	font-size: 18px;
+	display: flex;
+	justify-content: center;
+}
+
+#section1>.section>ul>li span {
+	font-style: normal;
+	font-weight: normal;
+	font-family: impact;
+	font-size: 60px;
+}
+
+#section1 .footer {
+	position: absolute;
+	right: 40px;
+	bottom: 40px;
+	color: white;
+	font-size: 14px;
+}
+
+#section2 {}
+
+#section2>.title {
+	width: 20%;
+	height: 100%;
+	background-image: url(../pic/section/title/02.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#section2>.section {
+	width: 80%;
+	height: 100%;
+	background-color: #665855;
+	padding: 0px 20px;
+	display: flex;
+	justify-content: space-between;
+}
+
+#section2 .title>div span {
+	width: 27px;
+	padding-bottom: 70px;
+	font-size: 16px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background-image: url(../pic/section/tuBiao/section2.png);
+	background-position: bottom center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+#section2>.section>.item {
+	margin: 0px 20px;
+	border-left: 1px solid #746562;
+	border-right: 1px solid #746562;
+	width: 100%;
+	height: 100%;
+	background-image: url(../pic/section/bg/02.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: all 1s ease-out 2s;
+	transform: translateY(50px);
+	opacity: 0;
+}
+
+#section2>.section>.item:hover {
+	background-image: none;
+	background-color: #746562;
+}
+
+#section2>.section>.item:hover .img::after {
+	transform: scale(1.1);
+}
+
+#section2>.section>.item>div {
+	width: 100%;
+	height: 45%;
+	overflow: hidden;
+}
+
+#section2>.section>.item>.img::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-image: url(../pic/section/pic/01.jpg);
+	background-size: cover;
+	background-position: center;
+	transition: all 1s ease-out 0s;
+	display: block;
+}
+
+#section2>.section>.item:nth-child(2)>.img::after {
+	background-image: url(../pic/section/pic/02.jpg);
+}
+
+#section2>.section>.item:nth-child(3)>.img::after {
+	background-image: url(../pic/section/pic/03.jpg);
+}
+
+#section2>.section>.item:nth-child(4)>.img::after {
+	background-image: url(../pic/section/pic/04.jpg);
+}
+
+#section2>.section>.item>.p {
+	color: white;
+	font-size: 24px;
+	writing-mode: vertical-rl;
+	padding: 40px 30px;
+}
+
+#section2>.section>.item>.p>p:last-child {
+	font-size: 14px;
+	height: 240px;
+	margin-right: 25px;
+}
+
+#section3 {}
+
+#section3>.title {
+	width: 25%;
+	height: 100%;
+	background-color: white
+}
+
+#section3>.title>div>* {
+	color: black !important;
+}
+
+#section3>.section {
+	width: 75%;
+	height: 100%;
+	background-image: url(../pic/section/bg/03.jpg);
+	background-size: cover;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+#section3>.section>.text {
+	padding-top: 13px;
+	width: 25vw;
+	position: relative;
+	writing-mode: vertical-lr;
+	cursor: pointer;
+	opacity: 0;
+	transform: translateY(50px);
+	transition: transform 1s ease-out 2.2s, opacity 1s ease-out 2.2s;
+}
+
+#section3>.section>.text>ul {
+	width: 100%;
+	height: 415px;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+	user-select: none;
+}
+
+#section3>.section>.text>ul>li {
+	padding: 0px 15px;
+}
+
+#section3>.section>.text>ul>li>p:first-child {
+	font-size: 20px;
+	opacity: 0.5;
+}
+
+#section3>.section>.text>ul>li>p:last-child {
+	font-size: 14px;
+	margin-left: 20px;
+	display: none;
+}
+
+#section3 .textLi p:first-child {
+	/*li被选中时的样式*/
+	opacity: 1 !important;
+}
+
+#section3 .textLi p:last-child {
+	display: block !important;
+}
+
+#section3 .btn {
+	width: 100%;
+	height: 1px;
+	background-color: #b5b1b2;
+	position: absolute;
+	top: -20px;
+	opacity: 0.75;
+	transition: 0.8s;
+}
+
+#section3 .btn::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 20px;
+	position: absolute;
+	left: 0px;
+	margin-top: -10px;
+	z-index: -1;
+}
+
+#section3>.section>.text:hover .btn {
+	opacity: 1;
+}
+
+#section3 .btn>.img {
+	width: 40px;
+	height: 40px;
+	margin-top: -20.5px;
+	background-image: url(../pic/section/tuBiao/section3.png);
+	background-size: 40px;
+	background-position: center;
+	position: relative;
+}
+
+#section3 .btn>.img::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#section3 .btn>.img1::after {
+	position: fixed;
+	width: 100vw !important;
+	height: 100vh !important;
+	left: 0px;
+	top: 0px;
+}
+
+#section3 .pic {
+	width: 45vw;
+	height: 540px;
+	margin-left: 40px;
+	position: relative;
+}
+
+#section3 .pic>img:first-child {
+	display: block;
+	width: 80%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	opacity: 0;
+	transition: all 1s ease-out 2.2s;
+	transform: translate(30px, -30px);
+}
+
+#section3 .pic>img:nth-child(2) {
+	display: block;
+	width: 50%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	opacity: 0;
+	transition: all 1s ease-out 2.2s;
+	transform: translate(-30px, 30px);
+}
+
+#section3 .pic p {
+	width: 167px;
+	height: 40px;
+	line-height: 40px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	cursor: pointer;
+	color: #94070A;
+	text-align: right;
+	background-image: url(../pic/tuBiao/main_footer1.svg);
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	transition: all 0.2s ease-out 0s;
+}
+
+#section3 .pic p:hover {
+	background-image: url(../pic/tuBiao/main_footer2.svg);
+}
+
+#section4 {}
+
+#section4>.title {
+	width: 20%;
+	height: 100%;
+	background-image: url(../pic/section/title/04.jpg);
+	background-size: cover;
+}
+
+#section4>.section {
+	width: 80%;
+	height: 100%;
+	background-image: url(../pic/section/bg/04.jpg);
+}
+
+#section4>.section>.item {
+	float: left;
+	position: relative;
+	opacity: 0;
+	transition: all 1s ease-out 0s;
+	overflow: hidden;
+}
+
+#section4>.section>.item p {
+	position: absolute;
+	background-size: cover;
+	color: white;
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+#section4>.section>.item p:hover {
+	color: #d7c7c7;
+}
+
+#section4>.section>.item p:last-child {
+	background-image: url(../pic/section/pic/section4/08.png);
+}
+
+#section4>.section>.item:first-child {
+	width: 40%;
+	height: 50%;
+	transition-delay: 2.3s;
+}
+
+#section4>.section>.item:first-child>p:first-child {
+	width: 100%;
+	height: 100%;
+	background-image: url(../pic/section/pic/section4/01.jpg);
+	transform: scale(1.2);
+	transition-delay: 2.6s;
+}
+
+#section4>.section>.item:first-child>p:last-child {
+	width: 50%;
+	height: 50%;
+	right: 0px;
+	bottom: 0px;
+}
+
+#section4>.section>.item:nth-child(2) {
+	width: 40%;
+	height: 50%;
+	transition-delay: 2.5s;
+}
+
+#section4>.section>.item:nth-child(2)>p:first-child {
+	width: 50%;
+	height: 100%;
+	background-image: url(../pic/section/pic/section4/02.jpg);
+	right: 0px;
+	transform: scale(1.2);
+	transition-delay: 2.8s;
+}
+
+#section4>.section>.item:nth-child(2)>p:last-child {
+	width: 50%;
+	height: 50%;
+	bottom: 0px;
+	left: 0px;
+	background-image: none;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#section4>.section>.item:nth-child(3) {
+	width: 20%;
+	height: 50%;
+	transition-delay: 2.6s;
+}
+
+#section4>.section>.item:nth-child(3)>p:first-child {
+	width: 100%;
+	height: 50%;
+	bottom: 0px;
+	background-image: url(../pic/section/pic/section4/03.jpg);
+	transform: scale(1.2);
+	transition-delay: 2.9s;
+}
+
+#section4>.section>.item:nth-child(4) {
+	width: 20%;
+	height: 50%;
+	transition-delay: 2.2s;
+}
+
+#section4>.section>.item:nth-child(4)>p:first-child {
+	width: 100%;
+	height: 50%;
+	bottom: 0px;
+	background-image: url(../pic/section/pic/section4/04.jpg);
+	transform: scale(1.2);
+	transition-delay: 2.5s;
+}
+
+#section4>.section>.item:nth-child(4)>p:last-child {
+	width: 100%;
+	height: 50%;
+	background-image: none;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+#section4>.section>.item:nth-child(5) {
+	width: 40%;
+	height: 50%;
+	transition-delay: 2.6s;
+}
+
+#section4>.section>.item:nth-child(5)>p:first-child {
+	width: 100%;
+	height: 100%;
+	bottom: 0px;
+	background-image: url(../pic/section/pic/section4/05.jpg);
+	transform: scale(1.2);
+	transition-delay: 2.9s;
+}
+
+#section4>.section>.item:nth-child(5)>p:last-child {
+	width: 50%;
+	height: 50%;
+	left: 0;
+	bottom: 0;
+}
+
+#section4>.section>.item:nth-child(6) {
+	width: 40%;
+	height: 25%;
+	transition-delay: 2.4s;
+}
+
+#section4>.section>.item:nth-child(6)>p:first-child {
+	width: 100%;
+	height: 100%;
+	background-image: url(../pic/section/pic/section4/06.jpg);
+	transform: scale(1.2);
+	transition-delay: 2.7s;
+}
+
+#section4>.section>.item:nth-child(6)>p:last-child {
+	width: 50%;
+	height: 100%;
+}
+
+#section4>.section>.item:last-child {
+	width: 40%;
+	height: 25%;
+	transition-delay: 2.5s;
+}
+
+#section4>.section>.item:last-child>p:first-child {
+	width: 50%;
+	height: 100%;
+	background-image: url(../pic/section/pic/section4/07.jpg);
+	transform: scale(1.2);
+	transition-delay: 2.8s;
+}
+
+@media screen and (max-width:1500px) {
+	#section1>.section>ul>li p {
+		font-size: 14px;
+	}
+
+	#section1>.section>ul>li span {
+		font-size: 52px;
+	}
+
+	#section2>.section>.item>.p {
+		padding: 30px 20px;
+	}
+
+	#section2>.section>.item>.p>p:last-child {
+		margin-right: 10px;
+	}
+
+	#section3>.section>.text>ul>li>p:first-child {
+		font-size: 16px;
+	}
+
+	#section3>.section>.text>ul>li>p:last-child {
+		margin-top: 10px;
+	}
+
+	#section3 .pic {
+		height: 450px;
+	}
+}
+
+@media screen and (max-width:1400px) {
+	#section2>.section>.item {
+		margin: 0px 5px;
+	}
+
+	#section4>.section>.item p {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width:1024px) {
+	#section1>.section>ul>li span {
+		font-size: 40px;
+	}
+}
+
+@media screen and (max-width:850px) {
+	section {
+		overflow-y: scroll;
+	}
+
+	#section {
+		width: 100%;
+		height: auto;
+		display: block;
+		margin-left: auto !important;
+	}
+
+	#section>div {
+		flex-direction: column;
+	}
+
+	#section>div .title>div {
+		flex-direction: column;
+	}
+
+	#section>div .title>div>* {
+		writing-mode: horizontal-tb;
+	}
+
+	#section>div .title>div>div {
+		margin-left: 0px;
+		margin-top: 10px;
+	}
+
+	#section1>.title {
+		width: 100%;
+		height: 20%;
+	}
+
+	#section1>.section {
+		width: 100%;
+		height: 80%;
+	}
+
+	#section1>.section>ul:first-child {
+		width: 100%;
+		height: 20%;
+		flex-wrap: wrap;
+	}
+
+	#section1>.section>ul:last-child {
+		width: 100%;
+		height: 0%;
+		flex-wrap: wrap;
+	}
+
+	#section1>.section>ul:nth-child(2),
+	#section1>.section>ul:nth-child(3) {
+		width: 100%;
+		height: 40%;
+		flex-wrap: wrap;
+	}
+
+	#section1>.section>ul>li {
+		width: 0px;
+		height: 0px;
+	}
+
+	#section1>.section>ul:first-child>li:nth-child(3),
+	#section1>.section>ul:first-child>li:nth-child(5) {
+		width: 50%;
+		height: 100%;
+	}
+
+	#section1>.section>ul:nth-child(2)>li:nth-child(1),
+	#section1>.section>ul:nth-child(2)>li:nth-child(2),
+	#section1>.section>ul:nth-child(2)>li:nth-child(4),
+	#section1>.section>ul:nth-child(2)>li:nth-child(5),
+	#section1>.section>ul:nth-child(3)>li:nth-child(2),
+	#section1>.section>ul:nth-child(3)>li:nth-child(3),
+	#section1>.section>ul:nth-child(3)>li:nth-child(5),
+	#section1>.section>ul:nth-child(3)>li:nth-child(6) {
+		width: 50%;
+		height: 50%;
+	}
+
+	#section1 .footer {
+		position: static;
+		background: #4b6695;
+		text-align: center;
+		padding: 15px;
+	}
+
+	#section2 {
+		height: auto !important;
+	}
+
+	#section2>.title {
+		padding: 30px;
+		width: 100%;
+		height: auto;
+	}
+
+
+	#section2 .title>div span {
+		font-size: 14px;
+		width: auto;
+		padding-bottom: 0px;
+		padding-left: 20px;
+		margin: 10px auto;
+		background-size: 14px auto;
+		background-position: left bottom;
+	}
+
+	#section2 h1:first-child {
+		flex-direction: column;
+	}
+
+	#section2 h1:last-child {
+		transform: scale(0.8);
+	}
+
+	#section2>.section {
+		width: 100%;
+		height: auto;
+		padding: 0px;
+		flex-wrap: wrap;
+	}
+
+	#section2>.section>.item {
+		display: block;
+		border: none;
+		margin: 0px;
+		width: 50%;
+		height: auto;
+	}
+
+	#section2>.section>.item>div {
+		height: 60vw;
+	}
+
+	#section2>.section>.item>div+div {
+		height: auto;
+	}
+
+	#section2>.section>.item>.p {
+		font-size: 18px;
+		writing-mode: horizontal-tb;
+		padding: 20px;
+	}
+
+	#section2>.section>.item>.p>p:last-child {
+		margin-right: 0px;
+		margin-top: 10px;
+		height: auto;
+	}
+
+	#section3 {
+		height: auto !important;
+	}
+
+	#section3>.title {
+		width: 100%;
+		height: auto;
+		padding: 50px 0px 20px;
+	}
+
+	#section3>.section {
+		width: 100%;
+		height: auto;
+		display: block;
+		padding: 0 20px;
+	}
+
+	#section3>.section>.text {
+		padding-top: 0px;
+		width: 100%;
+		writing-mode: horizontal-tb;
+	}
+
+	#section3>.section>.text>ul {
+		height: auto;
+		display: block;
+	}
+
+	#section3>.section>.text>ul>li {
+		padding: 0px 0px 15px 0px;
+		margin-bottom: 15px;
+		margin-left: 0px !important;
+		border-bottom: 1px solid #ddd;
+	}
+
+	#section3>.section>.text>ul>li>p:last-child {
+		margin-left: 0px;
+	}
+
+	#section3 .btn {
+		display: none;
+	}
+
+	#section3 .pic {
+		width: auto;
+		height: auto;
+		margin-left: 0px;
+		margin-top: 10px;
+		margin-bottom: 40px;
+	}
+
+	#section3 .pic>img {
+		display: none !important;
+	}
+
+	#section3 .pic>p {
+		position: static;
+		width: 154px;
+		line-height: 32px;
+		height: 32px;
+	}
+
+	#section4 {
+		height: auto !important;
+	}
+
+	#section4>.title {
+		width: 100%;
+		height: auto;
+		padding: 50px 0px 20px;
+	}
+
+	#section4>.section {
+		width: 100%;
+		height: auto;
+	}
+
+	#section4>.section>.item {
+		float: none;
+		width: 100% !important;
+		height: 80vw !important;
+	}
+
+	#section4>.section>.item:nth-child(3) {
+		display: none;
+	}
+
+	#section4>.section>.item:nth-child(4)>p:first-child {
+		height: 100%;
+	}
+
+	#section4>.section>.item:nth-child(4)>p:last-child {
+		width: 50%;
+		height: 50%;
+		right: 0;
+		bottom: 0;
+	}
+
+	#section4>.section>.item:nth-child(6)>p:last-child {
+		right: 0;
+	}
+
+	#section4>.section>.item:last-child {
+		display: none;
+	}
+}
